@@ -9,6 +9,8 @@ verify_ssl = true
 django = "*"
 pillow = "*"
 django-environ = "*"
+celery = ">=4.2.0rc4"
+flower = "*"
 
 [requires]
 python_version = "3.8"
