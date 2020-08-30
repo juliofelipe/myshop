@@ -9,11 +9,14 @@ verify_ssl = true
 django = "*"
 pillow = "*"
 django-environ = "*"
-celery = ">=4.2.0rc4"
+celery = "*"
 flower = "*"
 braintree = "*"
 weasyprint = "*"
 setuptools = "*"
+django-rosetta = "*"
+django-parler = "*"
+django-localflavor = "*"
 
 [requires]
 python_version = "3.8"

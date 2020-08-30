@@ -1,10 +1,10 @@
+from django.contrib import admin
+from .models import Order, OrderItem
 import csv
 import datetime
-from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import reverse
 from django.utils.safestring import mark_safe
-from .models import Order, OrderItem
 
 
 class OrderItemInline(admin.TabularInline):
@@ -60,8 +60,4 @@ class OrderAdmin(admin.ModelAdmin):
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInline]
     actions = [export_to_csv]
-
-
-
-
 

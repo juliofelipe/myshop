@@ -52,7 +52,7 @@ def payment_process(request):
         else:
             return redirect('payment:canceled')
     else:
-        # generate token
+        # generate token 
         client_token = braintree.ClientToken.generate()
         return render(request,
                       'payment/process.html',
